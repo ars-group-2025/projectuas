@@ -1,0 +1,123 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .galeri {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .slider-container {
+      width: 45%;
+    }
+
+    .slider img {
+      width: 100%;
+    }
+
+    #artikel {
+      padding: 20px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .slider-container {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    #kontak {
+      display: flex;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .contact-info {
+      flex: 1;
+      padding-right: 30px;
+    }
+
+    .contact-form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: row-reverse; /* Membalik urutan untuk label di kanan */
+      justify-content: flex-end;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .form-group label {
+      min-width: 80px;
+      text-align: right;
+    }
+
+    .form-group textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    button[type="submit"] {
+      background-color: #1a237e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #303f9f;
+    }

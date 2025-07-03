@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri Karya Seni</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <header>
+    <h1>Galeri Karya Seni</h1>
+    <nav>
+      <a href="#lukisan">Lukisan</a>
+      <a href="#foto">Fotografi</a>
+      <a href="#artikel">Artikel</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  
+  <section class="galeri">
+   
+    <div class="slider-container" id="lukisan">
+      <h2>Galeri Lukisan</h2>
+      <ul class="slider lukisan-slider">
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/David_-_Napoleon_crossing_the_Alps_-_Malmaison2.jpg/500px-David_-_Napoleon_crossing_the_Alps_-_Malmaison2.jpg" alt="" width="960" height="500">Lukisan 1</p></li>
+        <li><img src="https://cdn.grid.id/crop/0x0:0x0/700x465/photo/bobofoto/original/11572_foto-dwcom.jpg" alt="manuk" width="960" height="500">Lukisan 2</p></li>
+      </ul>
+    </div>
+
+    
+    <div class="slider-container" id="foto">
+      <h2>Galeri Fotografi</h2>
+      <ul class="slider foto-slider">
+        <li><img src="https://assetd.kompas.id/yJh8E2Kk_1SP-r4248bZUryBHbg=/4000x3002/https%3A%2F%2Fasset.kgnewsroom.com%2Fphoto%2Fpre%2F2024%2F06%2F20%2F3715d6fe-8810-4a28-a538-7ce17c9f17aa_jpg.jpg" alt=""  width="960" height="500"><p>Foto 1</p></li>
+        <li><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1601460766/blog/fbdnltfnp1iigtkyffzp.webp" alt="" width="960" height="500"><p>Foto 2</p></li>
+      </ul>
+    </div>
+  </section>
+
+ 
+  <section id="artikel">
+    <h2>Artikel Seni</h2>
+    <article>
+      <h3>Seniman Terkenal</h3>
+      <p>Beberapa seniman dunia telah membawa seni ke tingkat dunia...</p>
+    </article>
+    <article>
+      <h3>Suasana Tugu Yogyakarta</h3>
+      <p>Suasana di sekitar Tugu Yogyakarta pada Jumat, 14 Februari 2014 tampak berkabut dengan nuansa kuning kusam kecoklatan. Pasir menutupi hampir seluruh permukaan jalan, bangunan, tanaman, dan kendaraan.</p>
+    </article>
+    <article>
+      <h3>pemandangan Kawah Putih</h3>
+      <p>Kawah Putih Ciwidey sendiri merupakan danau kawah yang terbentuk dari letusan Gunung Patuha, salah satu gunung berapi di Jawa Barat.
+Air di danau kawah ini memiliki kandungan asam yang sangat tinggi, yang menyebabkan permukaannya berwarna putih kehijauan atau malah biru dan coklat - warna permukaan ini bisa berubah sesuai konsentrasi sulfur di dalamnya dan temperaturnya. </p>
+    </article>
+  </section>
+
+  
+ <section id="kontak">
+    <div class="contact-info">
+      <h2>Informasi Kontak</h2>
+      <p><strong>Telepon:</strong> 0813-1234-5678</p>
+      <p><strong>Email:</strong> info@galleriseni.com</p>
+      <p><strong>Jam Operasional:</strong></p>
+      <p>Senin-Jumat: 09:00 - 17:00</p>
+      <p>Sabtu: 10:00 - 15:00</p>
+      <p>&nbsp;</p>
+      <p>Untuk pertanyaan lebih lanjut atau jika Anda ingin mengunjungi galeri kami secara langsung, silakan datang ke alamat kami atau gunakan form kontak di samping.</p>
+    </div>
+    
+    <div class="contact-form">
+      <h2>Form Kontak</h2>
+      <form method="post" action="output.php">
+        <div class="form-group">
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+          <label for="nama">Nama:</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+          <label for="email">Email:</label>
+        </div>
+        <div class="form-group">
+          <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda" required></textarea>
+          <label for="pesan">Pesan:</label>
+        </div>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 Muhammad Nasrulloh Allutfi</p>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+      $('.lukisan-slider').bxSlider({
+        mode: 'fade',
+        captions: true
+      });
+      $('.foto-slider').bxSlider({
+        mode: 'fade',
+        captions: true
+      });
+    });
+  </script>
+</body>
+</html>
